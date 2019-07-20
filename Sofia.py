@@ -70,3 +70,4 @@ C = A + B
 Intro2 = lista.append(C)
 
 print("".join( repr(e) for e in lista))
+#bog , monster 
