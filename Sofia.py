@@ -307,3 +307,7 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
         else:
             # //OUT PUT
             print '[*]  PORFAVOR ESCRIBE UN PAIS O CODIGO DE PAIS VALIDO.'
+    elif opc==4:
+        print ("Gracias por Utlizar SoFiA")
+        break;
+        exit()
