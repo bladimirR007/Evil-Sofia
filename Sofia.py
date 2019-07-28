@@ -46,6 +46,7 @@ while True:
     print("   2.GENERADOR DE DNI")
     print("   3.ATAQUE DDOS")
     print("   4.IBAN GEN/CHECK[BETA][INESTABLE]")
+    print("   5.Salir")
     print("")
     opc = input("  Digite el numero de la opcion: ")
 
@@ -307,7 +308,7 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
         else:
             # //OUT PUT
             print '[*]  PORFAVOR ESCRIBE UN PAIS O CODIGO DE PAIS VALIDO.'
-    elif opc==4:
+    elif opc==5:
         print ("Gracias por Utlizar SoFiA")
         break;
         exit()
