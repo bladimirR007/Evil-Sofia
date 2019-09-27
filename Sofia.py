@@ -4,17 +4,17 @@ import time
 from random import choice
 import sys
 
-vrs = ' 1.9.1'
+vrs = '2.0.1'
 time.sleep(0.5)
 import os
 
-#hostname = "www.google.com"
-#response = os.system("ping -f " + hostname)
-#if response == 0:
-#    print "Hay conexion suficiente uwu"
-#else:
-#    print "No hay conexion suficiente unu"
-#    exit()
+hostname = "www.google.com"
+response = os.system("ping -f " + hostname)
+if response == 0:
+    print "Hay conexion suficiente uwu"
+else:
+    print "No hay conexion suficiente unu"
+    exit()
 ax = os.system 
 ax("cls")
 ax("color 4 ")
@@ -25,6 +25,11 @@ if ols > "23:30":
     exit()
 else:
     print " "
+def slowprint(s):
+    for c in s + '\n':
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(4. / 100)
 
 print '''
     ___ _   _  _ _      __   __  ___ _  __   
@@ -35,7 +40,7 @@ print '''
 time.sleep(1.4)
 ax("title EVIL SOFIA")
 print "         Emmanuel Milos" + "|" + "Emilio Barroso"
-print "         ~EXTRAPOLADOR Y GENERADOR SOFIA~" 
+print "              ~MULTI-HERRAMIENTA~" 
 print '''
   
 '''
@@ -45,8 +50,11 @@ while True:
     print("   1.EXTRAPOLADOR")
     print("   2.GENERADOR DE DNI")
     print("   3.ATAQUE DDOS")
-    print("   4.IBAN GEN/CHECK[BETA][INESTABLE]")
-    print("   5.Salir")
+    print("   4.IBAN GEN/CHECK")
+    print("   5.OTRAS HERRMAIENTAS[ALPHA]")
+    print("   6.WEB CLEANER")
+    print("   7.MAIL SPAMMER")
+    print("   99.Salir")
     print("")
     opc = input("  Digite el numero de la opcion: ")
 
@@ -113,7 +121,7 @@ while True:
         print time.strftime("               %I:%M:%S")
         print'''
     
-$$\        $$$$$$\   $$$$$$\ $$$$$$$$\ 
+$$\        $$$$$$+   $$$$$$\ $$$$$$$$\ 
 $$ |      $$  __$$\ $$  __$$\\__$$  __|
 $$ |      $$ /  $$ |$$ /  \__|  $$ |   
 $$ |      $$$$$$$$ |\$$$$$$\    $$ |   
@@ -227,7 +235,7 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
         || ||  _ \ / _ \ |  \| |_____| |  _|  _| |  \| |
         || || |_) / ___ \| |\  |_____| |_| | |___| |\  |
         |___|____/_/   \_\_| \_|      \____|_____|_| \_|                                               
-        \n[$] BOG IBAN GEN/VALIDATOR.
+        [$] BOG IBAN GEN/VALIDATOR.
         [$] https://www.Bogpro.com/
         '''
 
@@ -242,7 +250,7 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
                 de_iban = 'DE'+str(random.randint(00,99))+'50010517'+str(random.randint(0000000000,9999999999))
                 chk_req = requests.post('https://check-iban.com/proxy.php?iban='+de_iban)
                 if 'Diese IBAN ist nicht korrekt.' in chk_req.content:
-                    print '[-] INVALID GERMANY IBAN [ '+de_iban+' ].'
+                    print'[-] INVALID GERMANY IBAN [ '+de_iban+' ]'
                     pass
                 elif 'Diese IBAN ist formal korrekt.' in chk_req.content:
                     print '[+] VALID GERMANY IBAN [ '+de_iban+' ].'
@@ -309,6 +317,243 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
             # //OUT PUT
             print '[*]  PORFAVOR ESCRIBE UN PAIS O CODIGO DE PAIS VALIDO.'
     elif opc==5:
-        print ("Gracias por Utlizar SoFiA")
+        ax("cls")
+        print '   OTRAS HERRMAIENTAS'
+        print '      <<_MENU_>>'
+        print""
+        print '11 - ENCRIPTADOR DE PALABRAS'
+        time.sleep(5)
+
+        othert = int(input("DIGITE LA OPCION: "))
+        if othert == 11:
+            print "BOG SECURITY"
+            print("")
+            texto =  "hola "
+            opcion= 0
+            opcion = int(raw_input("ecriptar= 1 , desencriptar= 2: ") )
+            abc= ['!','a','b','c','d','e','f','g','h','i','j','k','l','m','n','#','o','p','q','r','s','t','u','v','w','x','y','z','-','&','@','.',';','0','1','2','3','4','5','6','7','8','9','|'] #45
+            rpas =len(abc) 
+
+            def invertir(var):
+                    return var[::-1]
+ 
+#funcion de resta
+            def restar(x,y):
+                    if x>y:
+                        return x-y
+                    else:
+                        return y-x
+ 
+            #funcion para eliminar los espacios
+            def sin(txt):
+                    nuevo=""
+                    for x in txt:
+                            if x=='|':
+                                nuevo = nuevo+' '
+                            else:
+                                nuevo = nuevo+x
+                    return nuevo
+ 
+            def espacio(texto):
+                    espacios= ""
+                    for x in texto:
+                            if x==' ':
+                                espacios = espacios+'|'
+                            else:
+                                espacios = espacios+x.lower() #convertimos a minusculas 
+                    return espacios
+ 
+ #opcion de encriptacion
+            if opcion == 1:
+                print"opcion de encriptacion"
+                mensaje=""
+                clave =""
+ 
+                mensaje = raw_input("introduzca mensaje a ecriptar: ")
+                clave = raw_input("introduzca palabra clave: ")
+                n =   len(mensaje)  #cuento la cantidad de caracteres 
+                posicion= 0
+                ab=clave[0]
+                index = abc.index(ab)
+                encoding= ""
+                suma = 0
+                espacios=""
+                espacios=espacio(mensaje)
+ 
+                for x in espacios:
+                    for y in range(rpas):
+                        li = 0
+                        if x==abc[y]:
+                                li=y+index
+                                if li <= rpas:
+                                    encoding =encoding+abc[li]
+ 
+                                else:
+                                    suma= restar(rpas,li)
+                                    encoding =encoding+abc[suma]+'$'
+                                    suma = 0
+    #print encoding
+                print "mensaje cifrado: ",invertir(encoding)
+                print "su clave es:", clave
+                time.sleep(10)
+                ax("cls")
+            if opcion == 2:
+ 
+                print"opcion de desencriptacion"
+                mensaje=""
+                mensaje= ''
+                mensaje = raw_input("Introduzca mensaje Encriptado: ")
+                clave = raw_input("Introduzca clave: ")
+                ab=clave[0] #seleccionamos la letra de la posicion 0 
+                index = abc.index(ab)  #usamos nuestra letra la ver en donde cae en la lista de abc
+ 
+                contador = 0
+                decoding= ''
+                letra= ''
+                tx= ''
+                suma = 0
+                rango =   len(mensaje) #cuento la cantidad de caracteres
+ 
+                w=0
+                while w < rango:
+                        letra=mensaje[w]
+                        if letra =='$':    
+                                incr = w+1
+                                li = 0
+                                tx=mensaje[incr]
+                                posicion= w
+                                for y in range(rpas):
+                                    if tx == abc[y]:
+                                        li=restar(index,y)
+                            #print index, " - ", y,"=",li
+                                        suma=restar(rpas,li)
+                                    decoding =decoding+abc[suma]
+                                    w+=1
+                        else:
+                                li = 0
+                                tx=mensaje[w]
+                                posicion= w
+                                for s in range(rpas):
+                                    if tx == abc[s]:
+                                        li= restar(s,index)
+                                        decoding =decoding+abc[li]
+                            #print posicion
+                        w+=1
+                #print decoding
+                mensaje =invertir(decoding)
+                #print mensaje
+                print "mensaje abierto: ",sin(mensaje)
+        else:
+            print("otsion no valida krnal")
+    elif opc==6:
+        print ("Angel Cleaner - BoG")
+        print "https://anonfile.com/L5634b48n2/ANGEL_CLEANER_rar"
+    elif opc==7:
+        import smtplib
+        import time
+        import random
+        import os, sys, smtplib, getpass
+        def logo():
+                os.system("cls")
+                print '''
+             o
+             X
+             X
+        |===[O]===|
+            |||
+            |||
+            |||
+            |||
+            |||
+            |||
+            |||
+            |||
+            |||
+            |^|
+            \ /
+             `
+        '''
+        logo()
+        print "        <_*PROTON*_>"
+        print ""
+
+
+        try:
+
+            W = ""
+            R = ""
+            G = ""
+
+
+
+
+            server = raw_input ('Mail-Server Gmail/Yahoo: ')
+
+            if server == 'gmail' or server == 'Gmail':
+
+                smtp_server = 'smtp.gmail.com'
+                port = 587
+                set_server = "gmail"
+
+            elif server == 'yahoo' or server == 'Yahoo':
+
+                smtp_server = 'smtp.mail.yahoo.com'
+                port = 25
+                set_server = "yahoo"
+
+            else:
+
+                print(R + "Error - El Script Solo Funciona Con gmail o yahoo" + W)
+                sys.exit()
+
+            email_user = raw_input('Email: ')
+            passwd     = getpass.getpass('Password: ')
+            email_to   = raw_input('\nPARA: ')
+            subject    = raw_input('ASUNTO: ')
+            body       = raw_input('MENSAJE: ')
+            total      = input('NUMERO DE MENSAJES A ENVIAR: ')
+
+            try:
+
+                server = smtplib.SMTP(smtp_server,port) 
+                server.ehlo()
+
+                if set_server == "gmail":
+                    server.starttls()
+
+                server.login(email_user,passwd)
+
+                print("\n\n\n - Objetivo : {} -\n".format(email_to))
+
+                for i in range(1, total+1):
+
+                    msg = 'DE: ' + email_user + '\nASUNTO: ' + subject + '\n' + body
+
+                    server.sendmail(email_user,email_to,msg)
+
+                    print(G + "<======[" + "Email enviado - {}".format(i) + "]======>")
+
+                    sys.stdout.flush()
+
+                server.quit()
+
+                print( R + "\n\n-Proceso Terminado-" + W)
+
+
+            except KeyboardInterrupt:
+
+                print(R + "\nError - Teclado Interrumpido" + W)
+                sys.exit()
+
+            except smtplib.SMTPAuthenticationError:
+
+                print( R + "\nError - Error de autenticacion, Esta seguro de que la contrasena o el nombre de usuario son correctos?" + W)
+                sys.exit()
+
+        except smtplib.SMTPAuthenticationError:
+
+            sys.exit()
+    elif opc==99:
+        print ("Gracias Por Utlizar Evil_SOFIA.  VERSION:" + vrs)
         break;
         exit()
