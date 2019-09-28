@@ -151,7 +151,6 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
         print ("          Generando DNI...")
         time.sleep(3)
         print '''
-
         '''
         def ra():
             numero = dni2
@@ -190,11 +189,9 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
 
         os.system("cls")
         print '''
-
  _  _  _  __    _ ______ _  __   
 | \| \/ \(_    |_| |  | |_|/  |/ 
 |_/|_/\_/__)   | | |  | | |\__|\ 
-
                                                               
         '''
         ip = raw_input("IP Target : ")
@@ -527,7 +524,7 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
 
                 for i in range(1, total+1):
 
-                    msg = 'DE: ' + email_user + '\nASUNTO: ' + subject + '\n' + body
+                    msg = 'DE: ' + email_user + '\nASUNTO: ' + subject + '\n' + body + '\n' +  "#Evil_SOFIA - HACKING SOFTWARE"
 
                     server.sendmail(email_user,email_to,msg)
 
