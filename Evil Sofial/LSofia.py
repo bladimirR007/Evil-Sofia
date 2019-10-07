@@ -32,7 +32,7 @@ print '''
    |___| \_/  |_|___| |___/ \__/|_| |_|_||_|  
 '''
 time.sleep(1.4)
-ax("title EVIL SOFIA")
+#ax("title EVIL SOFIA")
 print "         Emmanuel Milos" + "|" + "Emilio Barroso"
 print "              ~MULTI-HERRAMIENTA~" 
 print '''
