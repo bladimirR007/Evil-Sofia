@@ -9,3 +9,6 @@ EMILIO BARROSO
 
 
 EMMANUEL MILOS
+
+# Version para Linux:
+https://github.com/emiliobog/Evil-Sofia-Linux
