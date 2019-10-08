@@ -27,13 +27,13 @@ for i in msg00:
         time.sleep(0.02)
 vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
-potasio=requests.get('https://pastebin.com/raw/UyhX5Pjt').text.encode('utf-8')
+#potasio=requests.get('https://pastebin.com/raw/UyhX5Pjt').text.encode('utf-8')
 ms0g ="Checking Your Version (%s) "%vers
 for i in ms0g:
         sys.stdout.write(i)
         sys.stdout.flush()
         time.sleep(0.02)
-if vers==potasio:
+if vers==2.5:
   print('{>} Good You have last version \n')
 else:
  print("There is New Version available !! Do you Want To Update Your tool ? ")
