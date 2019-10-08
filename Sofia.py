@@ -94,7 +94,7 @@ while True:
     print("   6.WEB CLEANER")
     print("   7.MAIL SPAMMER")
     print("   8.HOST TO IP")
-    print("   9.STEAD - DDOS (LVL 4")
+    print("   9.STEAD - DDOS (LVL 4)")
     print("   99.Salir")
     print("")
     opc = input("  Digite el numero de la opcion: ")
