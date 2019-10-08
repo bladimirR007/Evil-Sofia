@@ -4,34 +4,73 @@ import time
 from random import choice
 import sys
 
-vrs = '2.0.1'
+vrs = ' Windows Edition'
+
 time.sleep(0.5)
 import os
+try:
+ import requests
+except:
+  print" Installing requests Module"
+  if os.name=='nt':
+    try:
+      os.system('C:\Python27\Scripts\pip2.exe install requests')
+    except:
+      print "Install Python-Pip Sir"
+      raw_input('')
+  else:
+    os.system('pip2 install requests')
+msg00 ="##### GOOd Now You have all modules #####";"############## Let's start ##############"
+for i in msg00:
+        sys.stdout.write(i)
+        sys.stdout.flush()
+        time.sleep(0.02)
+vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
-hostname = "www.google.com"
-response = os.system("ping -f " + hostname)
-if response == 0:
-    print "Hay conexion suficiente uwu"
+potasio=requests.get('https://pastebin.com/raw/UyhX5Pjt').text.encode('utf-8')
+ms0g ="Checking Your Version (%s) "%vers
+for i in ms0g:
+        sys.stdout.write(i)
+        sys.stdout.flush()
+        time.sleep(0.02)
+if vers==potasio:
+  print('{>} Good You have last version \n')
 else:
-    print "No hay conexion suficiente unu"
-    exit()
+ print("There is New Version available !! Do you Want To Update Your tool ? ")
+ ok=raw_input('''
+    Si
+    No
+   DIGITE LA OPCION: ''')
+ if ok=='si':
+  aro ="\n Update Strated !\n"
+  for i in aro:
+   sys.stdout.write(i)
+   sys.stdout.flush()
+   time.sleep(0.02)
+  os.remove(sys.argv[0])
+  os.system('start https://github.com/emiliobog/Evil-Sofia')
+  exit()
+  if os.name=='nt':
+   os.system('cls')
+  else:
+   os.system('clear')
+  os.system('smtp.py')
+ elif ok=='no':
+  pass
 ax = os.system 
 ax("cls")
 ax("color 4 ")
 ols = time.strftime("%H:%M:%S")
-print time.strftime("                     %I:%M:%S") 
+print time.strftime("                    %I:%M:%S") 
 if ols > "23:30":
-    print "EVIL SOFIA SE ESTA ACTUALIZANDO!..."
+    print "EVIL SOFIA ESTA REFRESCANDO!..."
+    os.system("start http://lh6.googleusercontent.com/-AXuIH_cHGOQ/UUzEKLtQ0EI/AAAAAAAAAGI/jw2FhilfMo4/s298-no/TrollFaceDancing_large.gif")
     exit()
 else:
     print " "
-def slowprint(s):
-    for c in s + '\n':
-        sys.stdout.write(c)
-        sys.stdout.flush()
-        time.sleep(4. / 100)
+#https://github.com/emiliobog/Evil-Sofia
 
-print '''
+print ''' 
     ___ _   _  _ _      __   __  ___ _  __   
    | __| \ / || | |   /' _/ /__\| __| |/  \  
    | _|`\ V /'| | |_  `._`.| \/ | _|| | /\ | 
@@ -54,6 +93,7 @@ while True:
     print("   5.OTRAS HERRMAIENTAS[ALPHA]")
     print("   6.WEB CLEANER")
     print("   7.MAIL SPAMMER")
+    print("   8.HOST TO IP")
     print("   99.Salir")
     print("")
     opc = input("  Digite el numero de la opcion: ")
@@ -550,7 +590,23 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
         except smtplib.SMTPAuthenticationError:
 
             sys.exit()
+    elif opc==8:
+        from socket import gethostbyname
+
+        def BOG():
+            print'\a=[Welcome to Ip Scanner by: BINERS OF GLORY]='
+            target = raw_input('Enter the Host: ')
+            targetIP = gethostbyname(target)
+            print '\a-Target IP ===>', targetIP
+            print '+------------------------------------+'
+            #BOG()
+        BOG()
+
     elif opc==99:
-        print ("Gracias Por Utlizar Evil_SOFIA.  VERSION:" + vrs)
+        pris = "Gracias Por Utlizar Evil_SOFIA.  VERSION:" + vrs
+        for i in pris:
+         sys.stdout.write(i)
+         sys.stdout.flush()
+         time.sleep(0.02)
         break;
         exit()
