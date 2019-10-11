@@ -4,11 +4,9 @@ MULTI_HERRAMIENTA PARA HACKING
 
 
 
-# DEv's:
-EMILIO BARROSO
+## DEv's:
+*   **EMILIO BARROSO** [FACEBOOK](https://www.facebook.com/peta.ftp)
+*   **EMMANUEL MILOS** [FACEBOOK](https://www.facebook.com/Emmanuel.ansioso43)
 
-
-EMMANUEL MILOS
-
-# Version para Linux:
+### Version para Linux:
 https://github.com/emiliobog/Evil-Sofia-Linux
