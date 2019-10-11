@@ -33,7 +33,7 @@ for i in ms0g:
         sys.stdout.write(i)
         sys.stdout.flush()
         time.sleep(0.02)
-if vers=="3.0":
+if vers=="3.1":
   print('{>} Good You have last version \n')
 else:
  print("There is New Version available !! Do you Want To Update Your tool ? ")
