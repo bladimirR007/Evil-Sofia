@@ -93,7 +93,7 @@ while True:
     print("   2.GENERADOR DE DNI")
     print("   3.ATAQUE DDOS(LVL 3)")
     print("   4.IBAN GEN/CHECK")
-    print("   5.OTRAS HERRMAIENTAS[ALPHA]")
+    print("   5.OTRAS HERRMIENTAS[ALPHA]")
     print("   6.WEB CLEANER")
     print("   7.MAIL SPAMMER")
     print("   8.HOST TO IP")
